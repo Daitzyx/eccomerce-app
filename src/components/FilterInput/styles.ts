@@ -6,7 +6,6 @@ export const InputContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  /* padding: 5px 8px; */
   border: none;
 `;
 
@@ -23,7 +22,7 @@ export const IconButton = styled.div`
 
 export const StyledInput = styled.input`
   width: 100%;
-  padding: 8px 40px 8px 15px;
+  padding: 8px 50px 8px 15px;
   border: 1px solid #ccc;
   border-radius: 25px;
 `;

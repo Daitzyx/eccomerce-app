@@ -30,6 +30,16 @@ export const Container = styled.div`
     height: 35px;
     grid-column: 2/3;
     grid-row: 2/3;
+
+    @media (max-width: 767px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 `;
 
@@ -38,13 +48,29 @@ export const ProductDetailContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr min-content;
   gap: 20px;
+
+  grid-row: 1/3;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 125px;
+    grid-row: 2/3;
+  }
 `;
 
 export const ProductImage = styled.img`
   width: 100%;
-  max-height: 400px;
+  max-height: 575px;
   object-fit: cover;
   border-radius: 8px;
+
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  @media (max-width: 767px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 `;
 
 export const Info = styled.div`

@@ -1,13 +1,23 @@
 # E-commerce App - React & TypeScript
 
-Este é um projeto de e-commerce desenvolvido em React com TypeScript, como parte de um teste técnico para uma vaga de emprego. O projeto permite o gerenciamento de produtos, um processo de checkout simples e inclui várias funcionalidades.
-
-# E-commerce React 18 with TypeScript
-
+- [Projeto](#projeto)
+- [Tecnologias](#tecnologias)
 - [Instruções para Rodar o Projeto](#instruções-para-rodar-o-projeto)
 - [Funcionalidades](#funcionalidades)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Funcionalidades](#funcionalidades)
+
+## 💻 Projeto
+
+O projeto foi um desafio como parte de um teste técnico para uma vaga de emprego. Que a ideia é um e-commerce, onde permite o gerenciamento de produtos, um processo de checkout simples, alem de mostrar os conhecimentos: Estados, ContextAPI, LocalStorage, Design Responsivo...
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
 
 ## Instruções para Rodar o Projeto
 

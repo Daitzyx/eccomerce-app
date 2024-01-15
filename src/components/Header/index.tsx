@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <h1>My E-commerce</h1>
+        <h1>E-Sell</h1>
         <Nav>
           <Link to="/">Produtos</Link>
         </Nav>
