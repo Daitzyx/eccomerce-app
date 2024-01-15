@@ -1,66 +1,67 @@
+import americanSnipper from '../assets/sniper_americano.jpg';
+import theOneThing from '../assets/a_unica_coisa.jpg';
+import cleanCode from '../assets/codigo_limpo.jpg';
+import harryPotter from '../assets/harry_potter_pedra_filosofal.jpg';
+import reiDosDividendos from '../assets/rei_dos_dividendos.jpg';
+import powerOfHabit from '../assets/o_poder_do_habito.jpg';
+import javascript from '../assets/javascript_estrutura_dados.jpg';
+import scherlockHolmes from '../assets/scherlock_holmes.jpg';
+
 export const products = [
   {
     id: 1,
-    name: 'Tênis Adidas Grand Court Base 2.0',
+    name: 'Sniper Americano',
     price: 129.99,
     date: new Date('2023-01-10'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: americanSnipper
   },
   {
     id: 2,
-    name: 'Camiseta Casual Masculina',
+    name: 'Sherlock Holmes',
     price: 39.99,
     date: new Date('2023-02-15'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: scherlockHolmes
   },
   {
     id: 3,
-    name: 'Mochila Esportiva Nike',
+    name: 'O Poder do Hábito',
     price: 79.99,
     date: new Date('2023-03-20'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: powerOfHabit
   },
   {
     id: 4,
-    name: 'Relógio Inteligente Fitness',
+    name: 'Rei dos Dividendos',
     price: 149.99,
     date: new Date('2023-04-25'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: reiDosDividendos
   },
   {
     id: 5,
-    name: 'Fone de Ouvido Bluetooth',
+    name: 'JavaScript Estrutura de Dados',
     price: 59.99,
     date: new Date('2023-05-30'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: javascript
   },
   {
     id: 6,
-    name: 'Óculos de Sol Estiloso',
+    name: 'Harry Potter e a Pedra Filosofal',
     price: 49.99,
     date: new Date('2023-06-05'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: harryPotter
   },
   {
     id: 7,
-    name: 'Bolsa Elegante para Notebook',
+    name: 'Código Limpo',
     price: 89.99,
     date: new Date('2023-07-10'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: cleanCode
   },
   {
     id: 8,
-    name: 'Caixa de Som Bluetooth Portátil',
+    name: 'A única coisa',
     price: 69.99,
     date: new Date('2023-08-15'),
-    image:
-      'https://d87n9o45kphpy.cloudfront.net/Custom/Content/Products/27/44/2744811_tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230_m1_638236359965616425.jpg'
+    image: theOneThing
   }
 ];
