@@ -37,6 +37,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 4. Acesse no navegador:
    O aplicativo estará disponível em http://localhost:5173.
 
+## Deploy
+
+Link do deploy: https://eccomerce-app-sandy.vercel.app/
+
 ## Funcionalidades
 
 - Listagem de produtos com atributos como nome, preço, data de inclusão e imagem.
@@ -47,3 +51,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Armazenamento dos produtos do carrinho no Local Storage.
 - Ordenação de produtos por preço ou data de inclusão.
 - Filtragem de produtos por nome, preço e data de inclusão.
+
+
