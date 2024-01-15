@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# E-commerce App - React & TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de e-commerce desenvolvido em React com TypeScript, como parte de um teste técnico para uma vaga de emprego. O projeto permite o gerenciamento de produtos, um processo de checkout simples e inclui várias funcionalidades.
 
-Currently, two official plugins are available:
+# E-commerce React 18 with TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Instruções para Rodar o Projeto](#instruções-para-rodar-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Funcionalidades](#funcionalidades)
 
-## Expanding the ESLint configuration
+## Instruções para Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
+   ```
+2. **Instale as Dependênciaso:**
+   ```bash
+   npm install
+   ```
+3. **Execute o Projeto:**
+   ```bash
+   npm run dev
+   ```
+4. Acesse no navegador:
+   O aplicativo estará disponível em http://localhost:5173.
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Listagem de produtos com atributos como nome, preço, data de inclusão e imagem.
+- Carrinho de compras funcional com adição e remoção de produtos.
+- Checkout com resumo dos itens no carrinho e totalizador de preço.
+- Botão "FINALIZAR COMPRA" para concluir a compra.
+- Mensagem de sucesso após finalizar a compra.
+- Armazenamento dos produtos do carrinho no Local Storage.
+- Ordenação de produtos por preço ou data de inclusão.
+- Filtragem de produtos por nome, preço e data de inclusão.
