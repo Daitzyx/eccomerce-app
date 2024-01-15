@@ -60,7 +60,7 @@ export const Checkout = () => {
 
       <BuyCart onClick={handleBuyCart}>{isLoading ? <LoadingSpin /> : 'Finalizar compra'}</BuyCart>
 
-      {showToast && <Toast message="Compra finalizada com sucesso!" />}
+      {showToast && <Toast>Compra finalizada com sucesso!</Toast>}
     </Container>
   );
 };

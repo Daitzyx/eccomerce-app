@@ -13,4 +13,9 @@ export const ToastContainer = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   text-align: center;
+
+  span {
+    color: #333;
+    font-weight: 700;
+  }
 `;

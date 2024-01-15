@@ -9,13 +9,22 @@ import { Container, FilterSortContent, ProductGrid } from './styles';
 export const Products = () => {
   const [filteredProducts, setFilteredProducts] = useState<Product[] | null>(null);
 
+  const removeAccents = (str: string) => {
+    return str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  };
+
   const handleFilterChange = (filter: string) => {
     if (!filter) {
       setFilteredProducts(products as Product[]);
     } else {
+      const normalizedFilter = removeAccents(filter);
+
       const filtered = products.filter(
         (product) =>
-          product.name.toLowerCase().includes(filter.toLowerCase()) ||
+          removeAccents(product.name).includes(normalizedFilter) ||
           product.price.toString().includes(filter) ||
           (product.date && new Date(product.date).toLocaleDateString().includes(filter)) ||
           false

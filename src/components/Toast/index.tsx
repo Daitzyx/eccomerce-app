@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 
 import { ToastContainer } from './styles';
 
 interface ToastProps {
-  message: string;
+  children: ReactNode;
 }
 
-export const Toast = ({ message }: ToastProps) => {
+export const Toast = ({ children }: ToastProps) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -17,5 +17,9 @@ export const Toast = ({ message }: ToastProps) => {
     return () => clearTimeout(timer);
   }, []);
 
-  return isVisible ? <ToastContainer>{message}</ToastContainer> : null;
+  return isVisible ? (
+    <ToastContainer>
+      <p>{children}</p>
+    </ToastContainer>
+  ) : null;
 };

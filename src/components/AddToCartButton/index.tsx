@@ -1,10 +1,11 @@
-import { useLocation, useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 
 import { Product } from '../../types';
 
 import { Button } from './styles';
 import { TiShoppingCart } from 'react-icons/ti';
+import { useState } from 'react';
+import { Toast } from '..';
 
 interface AddCartButtonProps {
   product: Product;
@@ -12,8 +13,8 @@ interface AddCartButtonProps {
 
 export const AddToCartButton = ({ product, ...rest }: AddCartButtonProps) => {
   const { dispatch } = useCart();
-  const navigate = useNavigate();
-  const location = useLocation();
+
+  const [isToastVisible, setIsToastVisible] = useState(false);
 
   const handleAddToCart = () => {
     dispatch({
@@ -21,14 +22,23 @@ export const AddToCartButton = ({ product, ...rest }: AddCartButtonProps) => {
       payload: { id: product.id, name: product.name, price: product.price, image: product.image, quantity: 1 }
     });
 
-    if (location.pathname.split('/')[1] === 'product') {
-      navigate('/');
-    }
+    setIsToastVisible(true);
+
+    setTimeout(() => {
+      setIsToastVisible(false);
+    }, 3000);
   };
 
   return (
-    <Button onClick={handleAddToCart} {...rest} aria-label="Add product to cart">
-      Adicionar <TiShoppingCart size={20} />
-    </Button>
+    <>
+      <Button onClick={handleAddToCart} {...rest} aria-label="Adicionar produto ao carrinho">
+        Adicionar <TiShoppingCart size={20} />
+      </Button>
+      {isToastVisible && (
+        <Toast>
+          <span>{product.name}</span> foi adicionado ao carrinho
+        </Toast>
+      )}
+    </>
   );
 };
