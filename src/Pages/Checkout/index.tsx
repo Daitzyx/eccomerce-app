@@ -6,7 +6,7 @@ import { Toast, LoadingSpin } from '../../components';
 import { Container, CheckoutSummary, CheckoutItem, TotalAmount, BuyCart } from './styles';
 import { IoTrash } from 'react-icons/io5';
 
-import { calculateTotal } from '../../util/helper';
+import { calculateTotal, formatCurrency } from '../../util/helper';
 
 export const Checkout = () => {
   const { cart, dispatch } = useCart();
@@ -45,7 +45,7 @@ export const Checkout = () => {
             <CheckoutItem key={item.id}>
               <img src={item.image} width={50} alt="Imagem do produto" />
               <span>{item.name}</span>
-              <span>R${item.price.toFixed(2)}</span>
+              <span>{formatCurrency(item.price)}</span>
               <span>Quantidade: {item.quantity}</span>
               <button onClick={() => handleRemoveItem(item.id)}>
                 <IoTrash />

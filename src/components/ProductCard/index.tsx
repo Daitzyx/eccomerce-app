@@ -20,7 +20,7 @@ export const ProductCard = ({ products }: ProductCardProps) => {
             <ProductInfo>
               <h3>{product.name}</h3>
               <p>{formatCurrency(product.price)}</p>
-              <p>Date: {new Date(product.date as Date).toLocaleDateString()}</p>
+              <p>Data: {new Date(product.date as Date).toLocaleDateString()}</p>
             </ProductInfo>
 
             <ButtonsContainer>
